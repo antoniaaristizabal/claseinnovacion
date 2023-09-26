@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Clases en el Gimnasio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza a tu archivo CSS personalizado aquí -->
+</head>
+<body>
+    <header>
+        <h1>Reserva de Clases en el Gimnasio</h1>
+    </header>
+    <main>
+        <form action="procesar_reserva.php" method="post"> <!-- Crea un archivo "procesar_reserva.php" para procesar la reserva -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="clase">Clase:</label>
+            <select id="clase" name="clase" required>
+                <option value="yoga">Yoga</option>
+                <option value="spinning">Spinning</option>
+                <option value="zumba">Zumba</option>
+                <!-- Agrega más opciones de clases según sea necesario -->
+            </select>
+
+            <label for="fecha">Fecha de Reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora de Reserva:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="metodo-pago">Método de Pago:</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+                <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+                <!-- Agrega más opciones de métodos de pago según sea necesario -->
+            </select>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </main>
+    <footer>
+        <p>Derechos de autor &copy; 2023 Tu Gimnasio</p>
+    </footer>
+</body>
+</html>
